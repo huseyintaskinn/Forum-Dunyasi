@@ -1,0 +1,49 @@
+.konuekleform{
+	width: 95%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 500px;
+}
+
+.konuekleform input[type="text"], .konuekleform textarea{
+	background-color: white;
+	width: 1000px;
+	border: none;
+	border-radius: 30px;
+	margin: 0px;
+	resize: none;
+	padding: 20px 20px;
+	box-sizing: border-box;
+}
+
+.konuekleform label{
+	margin: 15px 0px;
+}
+
+.konuekleform input:focus, .konuekleform textarea:focus{
+	border: none;
+    outline: none;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.2);
+}
+
+.konuekleform input[type=submit]{
+	margin: 40px 0px;
+	padding: 0px 15px;
+	border-width: 0px;
+	border-radius: 30px;
+	background-color: #000000;
+	cursor: pointer;
+	color: white;
+	margin: 30px 10px 10px 10px;
+	width: 1000px;
+	transition: .5s;
+}
+
+.konuekleform input[type=submit]:hover{
+	width: 1020px;
+	background-color: rgb(30, 30, 30);
+
+	/* Butondaki renk ve genişlik değişimine geçiş efekti vermek için ekledim */
+	transition: .5s;
+}

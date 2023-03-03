@@ -1,0 +1,277 @@
+body{
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+.anasayfa{
+	padding: 120px 20px 100px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	min-width: 1268px;
+	width: 100%;
+	box-sizing: border-box;
+	height: 100%;
+	background:radial-gradient(#dbdbdb,rgb(124, 124, 124));
+}
+
+#forumlar{
+	display: flex;
+	flex-direction: column;
+	width: 83%;
+}
+
+.baslik{
+	display: flex;
+	align-items: center;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	width: 100%;
+	margin-top: 15px;
+	background-color: black;
+	color: white;
+	border-radius: 10px 10px 0px 0px;
+	border-bottom: 4px solid white;
+	border-image: linear-gradient(90deg, #42ca88 10.21%, #32dde8 23.26%, #f9d30d 51.47%, #ed8b30 79.67%, #834bde 91.04000000000001%) 1;
+}
+
+.baslik2{
+	padding: 10px 20px;
+	box-sizing: border-box;
+	text-align: center;
+	width: 100%;
+	margin-top: 15px;
+	background-color: black;
+	color: white;
+	border-radius: 10px 10px 0px 0px;
+	border-bottom: 4px solid white;
+	border-image: linear-gradient(90deg, #42ca88 10.21%, #32dde8 23.26%, #f9d30d 51.47%, #ed8b30 79.67%, #834bde 91.04000000000001%) 1;
+}
+
+.altbaslik{
+	padding: 15px;
+	box-sizing: border-box;
+	min-width: 470px;
+	color: black;
+	text-decoration: none;
+	align-self: center;
+}
+
+.lakap{
+	padding: 15px 30px;
+	box-sizing: border-box;
+	width: 100%;
+	color: black;
+	text-decoration: none;
+}
+
+#yoneticiler{
+	display: flex;
+	flex-direction: column;
+	width: 13%;
+}
+
+.mod{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+	padding: 10px 0px 0px 0px;
+	border-bottom: 2px solid rgb(197, 197, 197);
+}
+
+.mod > p{
+	text-align: center;
+}
+
+.mod > .lakap{
+	font-size: 0.8rem;
+	font-weight: bold;
+}
+
+.satir{
+	display: flex;
+	justify-content: space-between;
+	
+	background-color: white;
+	border-bottom: 2px solid rgb(197, 197, 197);
+}
+
+.satirbos{
+	display: flex;
+	justify-content: space-between;
+	justify-content: center; 
+	width: 100%;
+	
+	background-color: white;
+	border-bottom: 2px solid rgb(197, 197, 197);
+}
+
+#satirsonu{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: auto;
+}
+
+.sayi{
+	width: 100px;
+	font-size: 1rem;
+	text-align: center;
+}
+
+.satir:hover{
+	background-color: rgb(230, 230, 230);
+}
+
+#son{
+	height: 15px;
+	background-color: black;
+	border-radius: 0px 0px 10px 10px;
+}
+
+.cizgi{
+	width: 2px;
+	background-color: rgb(197, 197, 197);
+	height: 100%;
+}
+
+.ilksatir .cizgi{
+	width: 2px;
+	background-color: rgb(34, 34, 34);
+	height: 100%;
+}
+
+.kullanici{
+	display: flex;
+	padding: 5px 0px;
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+	box-sizing: border-box;
+}
+
+.kullanicik{
+	display: flex;
+	padding: 5px;
+	justify-content: center;
+	align-items: center;
+	width: 210px;
+	box-sizing: border-box;
+}
+
+.kullanici > div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.kullanicik > div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.kullanici > div > a,
+.kullanici > div > p{
+	font-size:0.8rem;
+	text-decoration: none;
+	color: black;
+}
+
+.kullanicik > div > a,
+.kullanicik > div > p{
+	font-size:0.8rem;
+	text-decoration: none;
+	color: black;
+}
+
+.ilksatir{
+	display: flex;
+	justify-content: space-between;
+	
+	background-color: black;
+	color: white;
+	border-bottom: 2px solid rgb(197, 197, 197);
+}
+
+.ilksatirk{
+	display: flex;
+	justify-content: space-around;
+	
+	background-color: rgb(230, 230, 230);
+	border-bottom: 2px solid rgb(197, 197, 197);
+}
+
+.ilksatir > .altbaslik{
+	padding: 5px 15px;
+	box-sizing: border-box;
+	min-width: 470px;
+	color: white;
+	text-decoration: none;
+	font-size: 0.8rem;
+	font-weight: bold;
+}
+
+.ilksatir > #satirsonu{
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: auto;
+}
+
+.ilksatir > #satirsonu > p{
+	font-size: 0.8rem;
+	font-weight: bold;
+}
+
+.guncel{
+	display: flex;
+	align-items: center;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	width: 100%;
+	background-color: black;
+	color: white;
+	border-bottom: 4px solid white;
+	border-image: linear-gradient(90deg, #42ca88 10.21%, #32dde8 23.26%, #f9d30d 51.47%, #ed8b30 79.67%, #834bde 91.04000000000001%) 1;
+}
+
+.konuadi{
+	width: 100%;
+	display: block;
+	text-decoration: none;
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	box-sizing: border-box;
+	border-radius: 30px;
+	font-weight: bold;
+}
+
+.konuekle{
+	width: 15%;
+	margin-left: 10px;
+	text-decoration: none;
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	box-sizing: border-box;
+	border-radius: 30px;
+	font-weight: bold;
+	transition: .5s;
+}
+
+.konuekle:hover{
+	background-color: rgb(40, 40, 40);
+	transition: .5s;
+}
+
+
+

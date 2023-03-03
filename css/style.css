@@ -1,0 +1,470 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: Calibri;
+	font-size: 1.2rem;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	background-color: black;
+}
+
+p, a{
+	word-wrap:break-word;
+}
+
+main.girisuye{
+	min-width: 1268px;
+	width: 100%;
+	height: 800px;
+	box-sizing: border-box;
+
+	padding-top: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin: auto;
+	background:radial-gradient(#dbdbdb,rgb(124, 124, 124)); /*Arka plana geçişli bir renk vermek için kullandım */
+
+}
+
+nav{
+	height: 100px;
+	min-width: 1268px;
+	width: 100%;
+	box-sizing: border-box;
+	color: white;
+	background-color: black;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	position: fixed; /* Üstte yer alan paneli ekrana sabitlemek için kullandım*/
+	top: 0px; /*en başta görünmesi için*/
+
+	padding: 10px 20px;
+	border-width: 0px 0px 4px 0px;
+	border-style: solid;
+
+	/* Alt çerçevenin renginin gradyan olması için ekledim */
+	border-image: linear-gradient(90deg, #42ca88 10.21%, #32dde8 23.26%, #f9d30d 51.47%, #ed8b30 79.67%, #834bde 91.04000000000001%) 1;
+	z-index: 1;
+}
+
+
+.logo{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.logo > p{
+	font-weight: bold;
+	font-size: 35px;
+	color: white;
+	margin-left: 10px;
+}
+
+nav > div{
+	display: flex;
+	align-items: flex-start;
+	flex-direction: row;
+}
+
+nav > div > p, nav > div > a, #ac{
+	margin: 0px 15px;
+}
+
+#uye , #giris {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 480px;
+    height: 642px;
+    padding: 20px 0px;
+    box-sizing: border-box;
+	background-color: #ffffff;
+    color: rgb(0, 0, 0);
+	border-radius: 10px 0px 0px 10px;
+}
+
+#giris{
+	height: 530px;
+}
+
+#metin{
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+	align-items: flex-end;
+	padding-right: 50px;
+	box-sizing: border-box;
+	width: 480px;
+  height: 642px;
+
+    /* Arka plana resim ekledim */
+	background-image: url(../resimler/girisarkaplan.png);
+	/* Resmin tüm kapsayıcıyı kaplayacak eşkilde boyutlanması için ekledim */
+	background-size: cover;
+	/* Resmin sağa dayalı yerleşmesi için ekledim */
+	background-position: right;
+	border-radius: 0px 10px 10px 0px;
+}
+
+#metin2{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: flex-start;
+	padding-left: 50px;
+	box-sizing: border-box;
+	width: 480px;
+    height: 530px;
+
+    /* Arka plana resim ekledim */
+	background-image: url(../resimler/girisarkaplan.png);
+	/* Resmin tüm kapsayıcıyı kaplayacak eşkilde boyutlanması için ekledim */
+	background-size: cover;
+	/* Resmin sola dayalı yerleşmesi için ekledim */
+	background-position: left;
+	border-radius: 10px 0px 0px 10px;
+}
+
+input {
+    width: 275px;
+    height: 45px;
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    background-color: transparent;
+    margin: 15px;
+    border-bottom: 3px solid #bbbbbb;
+    color: #000000;
+
+    /* Altaki çerçeve rengine geçiş efekti vermek için ekledim */
+	transition: .5s;
+}
+
+
+/* İnputa yazı yazılıyorsa veya inputun içi doluysa bunları yap  */
+#uye input:focus, #giris input:focus,
+#uye input:valid, #giris input:valid{
+	border-width: 0px;
+	border-bottom: 3px solid #000000;
+}
+
+#uye input[type=submit], #giris input[type=submit], .panel input[type=submit]{
+	padding: 0px 15px;
+	border-width: 0px;
+	border-radius: 30px;
+	background-color: #000000;
+	cursor: pointer;
+	color: white;
+	margin: 10px;
+	transition: .5s;
+}
+
+#uye input[type=submit]:hover, #giris input[type=submit]:hover, .panel input[type=submit]:hover{
+	width: 300px;
+	background-color: rgb(30, 30, 30);
+
+	/* Butondaki renk ve genişlik değişimine geçiş efekti vermek için ekledim */
+	transition: .5s;
+}
+
+::placeholder{
+	color:white;
+}
+
+.inputalan{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-top: 5px;
+	height: 70px;
+}
+
+.inputalan > label{
+	/* Flex kullandığım için label inputun altındaydı. Labeli placeholder konuma getirmek için transform kullandım */
+	transform: translate(25px, -50px);
+	transition: .5s;
+}
+.buton{
+	padding: 5px;
+	border-bottom: 3px solid black;
+	color: white;
+	flex-basis: auto;
+
+	/* Altaki çerçeve rengine geçiş efekti vermek için ekledim */
+	transition: .5s;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.buton:hover{
+	border-image: linear-gradient(90deg, #42ca88, #32dde8, #f9d30d, #ed8b30, #834bde) 1;
+	/* Altaki çerçeve rengine geçiş efekti vermek için ekledim */
+	transition: .5s;
+}
+
+#arainput{
+	border-radius: 30px;
+	font-size: 0.8rem;
+	width: 200px;
+	border: 2px solid white;
+	padding: 0px 15px;
+	color: white;
+	flex-shrink: 2;
+}
+
+/* İnput alanına giriş yapılırken labela ve input alanı doluyken labela yapılacak işlemler  */
+.inputalan > input:focus ~ label,
+.inputalan > input:valid ~ label{
+	/* Labelı yukarı ötelemek için ekledim*/
+	transform: translate(25px, -83px);
+	transition: .5s;
+	color: #000000;
+}
+
+
+/* Emailde @ işareti konulmadığı zaman valid işe yaramıyordu bu nedenle üstteki yeterli olmadı */
+/* mail tipinde olan inputta placeholder gözükmüyorsa labela yapılacak işlemler */
+.inputalan > input[type=email]:not(:placeholder-shown) ~ label{
+	transform: translate(25px, -83px);
+	transition: .5s;
+	color: #000000;
+}
+
+/* @ işareti girilmeden mail tipindeki input alana bir giriş yapılıp bırakıldığında yapılacak işlemler */
+.inputalan > input[type=email]:not(:placeholder-shown){
+	border-color: red;
+}
+
+#baslik{
+	font-size: 2rem;
+	margin: 5px 0px 15px 20%;
+	padding: 5px;
+	border-bottom: 4px solid black;
+	border-image: linear-gradient(90deg, #42ca88, #32dde8, #f9d30d, #ed8b30, #834bde) 1;
+	align-self: flex-start;
+}
+
+#link{
+	font-size: 1rem;
+	text-decoration: none;
+	color: #00a1e0;
+}
+
+.acilirmenu{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	height: 40px;
+	text-align: center;
+}
+
+#menu{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	/* Menü normalde görünmemesi için ekranın dışında bir alanda konumlandırdım  */
+	transform: translateY(-500px);
+	background-color: #000000;
+	border-radius: 10px;
+	padding: 10px;
+	border: 2px solid rgb(41, 41, 41);
+	width: 100px;
+	/* Menü konum değiştirdikten sonra eski konumuna geri gitmeden önce bekleyeceği süreyi belirledim */
+	transition-delay: .5s;
+}
+
+/* idsi ac olan a tagının üzerine gelindiğinde menü ekranda görünen bir konuma geliyor */
+#ac:hover ~ #menu, #menu:hover{
+	transform: translateY(10px);
+}
+
+footer{
+	background-color: black;
+	color: white;
+	min-width: 1268px;
+	width: 100%;
+	height: auto;
+	padding: 20px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: stretch;
+	border-top: 4px solid white;
+	border-image: linear-gradient(90deg, #42ca88 10.21%, #32dde8 23.26%, #f9d30d 51.47%, #ed8b30 79.67%, #834bde 91.04000000000001%) 1;
+	
+}
+
+footer > div{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: justify;
+}
+
+footer #istatistik #satir{
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
+}
+
+footer #istatistik #satir > p{
+	font-size: 0.8rem;
+	margin: 5px 0px;
+}
+
+footer #istatistik {
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+	width: 100%;
+	align-items: center;	
+}
+
+footer #kısayol{
+	display: flex;
+	flex-direction: column;
+	margin-top: 15px;
+}
+
+footer #kısayol > a{
+	text-decoration: none;
+	color: white;
+	font-size: 0.8rem;
+	margin: 5px 0px;
+}
+
+footer #kısayol > a:hover{
+	color: grey;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-facebook:hover {
+  background: #3B5998;
+  color: white;
+  transition: .5s;
+}
+
+.fa-facebook {
+  transition: .5s;
+  background-color: #1e1e1e;
+  border-radius: 5px;
+  color: #858585;
+}
+
+.fa-twitter:hover {
+  background: #55ACEE;
+  color: white;
+  transition: .5s;
+}
+
+.fa-twitter {
+  transition: .5s;
+  background-color: #1e1e1e;
+  border-radius: 5px;
+  color: #858585;
+}
+
+.fa-google:hover {
+  background: #dd4b39;
+  color: white;
+  transition: .5s;
+}
+
+.fa-google {
+  transition: .5s;
+  background-color: #1e1e1e;
+  border-radius: 5px;
+  color: #858585;
+}
+
+.fa-youtube:hover {
+  background: #bb0000;
+  color: white;
+  transition: .5s;
+}
+
+.fa-youtube {
+  transition: .5s;
+  background-color: #1e1e1e;
+  border-radius: 5px;
+  color: #858585;
+}
+
+.fa-instagram:hover {
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  color: white;
+  transition: .5s;
+}
+
+.fa-instagram {
+  transition: .5s;
+  background-color: #1e1e1e;
+  border-radius: 5px;
+  color: #858585;
+}
+
+.cerceve{
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.2);
+}
+
+#cevrimici{
+	border-radius: 50%;
+	position: absolute;
+	transform: translate(-15px,37px);
+	width:15px;
+	height:15px;
+}
+
+#cevrimici2{
+	border-radius: 50%;
+	position: absolute;
+	transform: translate(-15px);
+  width: 15px;
+  height: 15px;
+}
+
+#cevrimici3{
+	border-radius: 50%;
+	position: absolute;
+	transform: translate(-35px, -10px);
+  width: 25px;
+  height: 25px;
+}
+
+#hatamesaj{
+	align-self: center;
+  font-size: 0.8rem;
+  color: red;
+  margin-bottom: 10px;
+  margin-top: -5px;
+}

@@ -1,0 +1,62 @@
+.panel{
+	min-width: 1268px;
+	width: 100%;
+	height: 1500px;
+	box-sizing: border-box;
+
+	padding-top: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+
+	margin: auto;
+	background:radial-gradient(#dbdbdb,rgb(124, 124, 124)); /*Arka plana geçişli bir renk vermek için kullandım */
+
+}
+
+.blok{
+	background-color: white;
+	width: 90%;
+	height: auto;
+	border-radius: 15px;
+	padding: 20px;
+}
+
+.blok input{
+    margin: 0px;
+    border: 3px solid #bbbbbb;
+    border-radius: 30px;
+}
+
+.blok input[type="submit"]{
+    padding: 5px 20px;
+    width: auto;
+}
+
+.blok input[type="submit"]:hover{
+	width: auto;
+}
+
+.blok form{
+	display: flex;
+	flex-direction: column;
+}
+
+.blok #baslik3{
+	background: black;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 10px;
+}
+
+.blok div{
+	margin-left:20px;
+}
+
+.blok select{
+	margin-left: 10px;
+	border-radius: 30px;
+	padding: 5px 15px;
+	border: 3px solid #bbbbbb;
+}

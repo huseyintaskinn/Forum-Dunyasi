@@ -1,0 +1,161 @@
+body{
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+.anasayfa{
+	padding: 120px 20px 100px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	min-width: 1268px;
+	width: 100%;
+	box-sizing: border-box;
+	height: 100%;
+	background:radial-gradient(white,rgb(124, 124, 124));
+}
+
+#forumlar{
+	display: flex;
+	flex-direction: column;
+	width: 83%;
+}
+
+.baslik{
+	display: flex;
+	align-items: center;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	width: 100%;
+	margin-top: 15px;
+	background-color: black;
+	color: white;
+	border-radius: 10px 10px 0px 0px;
+	border-bottom: 4px solid white;
+	border-image: linear-gradient(90deg, #42ca88 10.21%, #32dde8 23.26%, #f9d30d 51.47%, #ed8b30 79.67%, #834bde 91.04000000000001%) 1;
+}
+
+.baslik2{
+	padding: 10px 20px;
+	box-sizing: border-box;
+	text-align: center;
+	width: 100%;
+	margin-top: 15px;
+	background-color: black;
+	color: white;
+	border-radius: 10px 10px 0px 0px;
+	border-bottom: 4px solid white;
+	border-image: linear-gradient(90deg, #42ca88 10.21%, #32dde8 23.26%, #f9d30d 51.47%, #ed8b30 79.67%, #834bde 91.04000000000001%) 1;
+}
+
+.altbaslik{
+	padding: 10px 30px;
+	box-sizing: border-box;
+	width: 100%;
+	color: black;
+	text-decoration: none;
+}
+
+.lakap{
+	padding: 15px 30px;
+	box-sizing: border-box;
+	width: 100%;
+	color: black;
+	text-decoration: none;
+}
+
+.mod > .lakap{
+	font-size: 0.8rem;
+	font-weight: bold;
+}
+
+#yoneticiler{
+	display: flex;
+	flex-direction: column;
+	width: 13%;
+}
+
+.mod{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+	padding: 10px 0px 0px 0px;
+	border-bottom: 2px solid rgb(197, 197, 197);
+}
+
+.mod > p{
+	text-align: center;
+}
+
+.mod > .altbaslik{
+	font-size: 0.8rem;
+	font-weight: bold;
+}
+
+.satir{
+	display: flex;
+	justify-content: space-around;
+	
+	background-color: white;
+	border-bottom: 2px solid rgb(197, 197, 197);
+}
+
+#satirsonu{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 60%;
+}
+
+#gonderi{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.satir:hover{
+	background-color: rgb(230, 230, 230);
+}
+
+#son{
+	height: 15px;
+	background-color: black;
+	border-radius: 0px 0px 10px 10px;
+}
+.cizgi{
+	width: 2px;
+	background-color: rgb(197, 197, 197);
+	height: 100%;
+}
+
+#gonderi > p{
+	font-size: 0.8rem;
+}
+
+.git{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-size: 1rem;
+	width: auto;
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	cursor: pointer;
+}
+
+.git:hover{
+	text-decoration: none;
+	background-color: transparent;
+	color: black;
+	font-weight: bold;
+	font-size: 1rem;
+	width: auto;
+	padding: 0px;
+	margin: 0px;
+	border: none;
+	cursor: pointer;
+}
